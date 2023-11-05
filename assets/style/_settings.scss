@@ -1,19 +1,29 @@
-// Variables
+$white : #F3F3F3;
+$black : #000000;
+$grey : #65686A;
 
-$color1: rgb(239, 49, 81);
-$color2: rgb(250, 197, 99);
-$color3: cyan;
-$white: rgb(241, 241, 241);
-$black: rgb(23, 23, 23);
-
-// Mixins
-
-@mixin centerChild {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
 body {
-  background-color: $color2;
+    background: url(../img/bg.jpg) fixed center/cover;
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+@mixin title {
+    letter-spacing: 6px;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+.btn {
+    color: $black;
 }
