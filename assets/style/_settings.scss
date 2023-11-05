@@ -1,7 +1,8 @@
 $white : #F3F3F3;
 $black : #000000;
 $grey : #65686A;
-
+$font1: 'Inter', sans-serif;
+$font2: 'Merriweather', serif;
 * {
     margin: 0;
     padding: 0;
@@ -20,10 +21,10 @@ body {
     margin: 0 auto;
 }
 @mixin title {
-    letter-spacing: 6px;
-    font-family: 'Inter', sans-serif;
+    font-family: $font1;
+    letter-spacing: 2px;
     text-transform: uppercase;
-}
+  }
 .btn {
     color: $black;
 }
